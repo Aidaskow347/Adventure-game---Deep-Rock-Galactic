@@ -321,5 +321,8 @@
   <ItemGroup>
     <None Include="Resources\rocks.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light-spot-orb-png-8.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

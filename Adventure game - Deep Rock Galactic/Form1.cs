@@ -576,7 +576,6 @@ namespace Adventure_game___Deep_Rock_Galactic
 
                 Refresh();
                 Thread.Sleep(200);
-
             }
             else if (page == 5)
             {
@@ -654,6 +653,9 @@ namespace Adventure_game___Deep_Rock_Galactic
 
             if (page == 16)
             {
+                option1Box.Visible = false;
+                option2Box.Visible = false;
+                option3Box.Visible = false;
                 option1Label.Text = "";
                 option2Label.Text = "";
                 option3Label.Text = "";
@@ -664,7 +666,9 @@ namespace Adventure_game___Deep_Rock_Galactic
             else if (page == 8 || page == 3 || page == 19)
             {
                 // if page = 8 or page = 3, or page = 18 do not remove outputlabel. (they have their own delays for their sounds)
-
+                option1Box.Visible = false;
+                option2Box.Visible = false;
+                option3Box.Visible = false;
                 option1Label.Text = "";
                 option2Label.Text = "";
                 option3Label.Text = "";
@@ -673,6 +677,9 @@ namespace Adventure_game___Deep_Rock_Galactic
             {
                 // else reset everything and have a delay
 
+                option1Box.Visible = false;
+                option2Box.Visible = false;
+                option3Box.Visible = false;
                 outputLabel.Text = "";
                 option1Label.Text = "";
                 option2Label.Text = "";
@@ -690,6 +697,10 @@ namespace Adventure_game___Deep_Rock_Galactic
                     fossil = 0;
 
                     outputLabel.Text = $"You're on your Space Rig. It is almost time for mission launch, How do you Prepare?";
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+                    option3Box.Visible = true;
 
                     option1Label.Text = "Pursue your Mission";
                     option2Label.Text = "Cause Havoc";
@@ -725,8 +736,12 @@ namespace Adventure_game___Deep_Rock_Galactic
 
                     Refresh();
                     Thread.Sleep(50);
+                    
+                    //enable orb options to be visible
 
-                    // enable leech repellant and disable others
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+                    option3Box.Visible = true;
 
                     outputLabel.Text = "Welcome to the Abyss Shop, There are some special items for sale, but due to the lack" +
                         "of products you can only choose one.\n\nWhich one do you want?";
@@ -766,6 +781,13 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "No";
                     option3Label.Text = "";
 
+
+                    //enable orb options to be visible except option3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+                    
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_3);
@@ -786,6 +808,11 @@ namespace Adventure_game___Deep_Rock_Galactic
 
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
+
+                    //enable orb options to be visible except option3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
 
                     //embeded image change 
 
@@ -809,6 +836,12 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "Explore the Nearby Tunnel";
                     option3Label.Text = "Eat the Suspicious Mushrooms";
 
+                    //enable orb options to be visible 
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+                    option3Box.Visible = true;  
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_5);
@@ -829,6 +862,12 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = "Fight the Bugs";
                     option2Label.Text = "Run Away";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+                   
 
                     //embeded image change 
 
@@ -852,6 +891,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "Maybe Later";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_7);
@@ -873,6 +917,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "No";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_8);
@@ -892,6 +941,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
 
                     //embeded image change 
 
@@ -914,6 +968,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "No";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_10);
@@ -934,6 +993,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "No";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.lose_4);
@@ -953,6 +1017,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
 
                     //embeded image change 
 
@@ -975,6 +1044,12 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "try to recover";
                     option3Label.Text = "Eat More?";
 
+                    //enable orb options to be visible
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+                    option3Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_13);
@@ -995,6 +1070,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
 
                     //embeded image change 
 
@@ -1017,6 +1097,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "Leave it alone";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_15);
@@ -1036,6 +1121,12 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = $"Find more Fossils ({fossil}/10)";
                     option2Label.Text = "Maybe Later";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
 
                     //embeded image change 
 
@@ -1058,6 +1149,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "Try To Climb out";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_17);
@@ -1078,6 +1174,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = "Give Up";
                     option2Label.Text = "Run Away!";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
 
                     //embeded image change 
 
@@ -1101,6 +1202,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "No";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_19);
@@ -1120,6 +1226,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = "Call Heavy duty Equipment?";
                     option2Label.Text = "Ignore and go Explore";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
 
                     //embeded image change 
 
@@ -1141,6 +1252,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "No";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_21);
@@ -1161,6 +1277,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
 
                     //embeded image change 
 
@@ -1184,6 +1305,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "No";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_23);
@@ -1204,6 +1330,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
 
                     //embeded image change 
 
@@ -1226,6 +1357,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "No";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.lose_2);
@@ -1247,6 +1383,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Text = "No";
                     option3Label.Text = "";
 
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
+
                     //embeded image change 
 
                     mainDisplay.BackgroundImage = (Properties.Resources.page_26);
@@ -1267,6 +1408,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Label.Text = "";
+
+                    //enable orb options to be visible except 3
+
+                    option1Box.Visible = true;
+                    option2Box.Visible = true;
 
                     //embeded image change 
 
@@ -1295,6 +1441,11 @@ namespace Adventure_game___Deep_Rock_Galactic
                     option2Label.Enabled = false;
                     option3Label.Enabled = false;
 
+                    //enable orb options to be invisible
+
+                    option1Box.Visible = false;
+                    option2Box.Visible = false;
+                    option3Box.Visible = false;  
                     //state sound player
 
                     player = new SoundPlayer(Properties.Resources.buttonSound);

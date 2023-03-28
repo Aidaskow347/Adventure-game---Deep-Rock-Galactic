@@ -35,14 +35,14 @@
             this.startButton = new System.Windows.Forms.Button();
             this.startupText = new System.Windows.Forms.Label();
             this.startScreenBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.option3Box = new System.Windows.Forms.PictureBox();
+            this.option2Box = new System.Windows.Forms.PictureBox();
+            this.option1Box = new System.Windows.Forms.PictureBox();
             this.mainDisplay = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.startScreenBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.option3Box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.option2Box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.option1Box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainDisplay)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,38 +121,44 @@
             // 
             // startScreenBox
             // 
-            this.startScreenBox.Location = new System.Drawing.Point(-4, -3);
+            this.startScreenBox.Location = new System.Drawing.Point(0, -21);
             this.startScreenBox.Name = "startScreenBox";
             this.startScreenBox.Size = new System.Drawing.Size(1031, 780);
             this.startScreenBox.TabIndex = 9;
             this.startScreenBox.TabStop = false;
             // 
-            // pictureBox4
+            // option3Box
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 695);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(57, 50);
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
+            this.option3Box.BackColor = System.Drawing.Color.Transparent;
+            this.option3Box.BackgroundImage = global::Adventure_game___Deep_Rock_Galactic.Properties.Resources.optionPicture;
+            this.option3Box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.option3Box.Location = new System.Drawing.Point(12, 695);
+            this.option3Box.Name = "option3Box";
+            this.option3Box.Size = new System.Drawing.Size(57, 50);
+            this.option3Box.TabIndex = 7;
+            this.option3Box.TabStop = false;
             // 
-            // pictureBox3
+            // option2Box
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 639);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 50);
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
+            this.option2Box.BackColor = System.Drawing.Color.Transparent;
+            this.option2Box.BackgroundImage = global::Adventure_game___Deep_Rock_Galactic.Properties.Resources.optionPicture;
+            this.option2Box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.option2Box.Location = new System.Drawing.Point(12, 639);
+            this.option2Box.Name = "option2Box";
+            this.option2Box.Size = new System.Drawing.Size(57, 50);
+            this.option2Box.TabIndex = 6;
+            this.option2Box.TabStop = false;
             // 
-            // pictureBox2
+            // option1Box
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 583);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 50);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.option1Box.BackColor = System.Drawing.Color.Transparent;
+            this.option1Box.BackgroundImage = global::Adventure_game___Deep_Rock_Galactic.Properties.Resources.optionPicture;
+            this.option1Box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.option1Box.Location = new System.Drawing.Point(12, 583);
+            this.option1Box.Name = "option1Box";
+            this.option1Box.Size = new System.Drawing.Size(57, 50);
+            this.option1Box.TabIndex = 5;
+            this.option1Box.TabStop = false;
             // 
             // mainDisplay
             // 
@@ -177,16 +183,16 @@
             this.Controls.Add(this.option3Label);
             this.Controls.Add(this.option2Label);
             this.Controls.Add(this.option1Label);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.option3Box);
+            this.Controls.Add(this.option2Box);
+            this.Controls.Add(this.option1Box);
             this.Controls.Add(this.mainDisplay);
             this.Name = "Form1";
             this.Text = "DRG - Adventure Game";
             ((System.ComponentModel.ISupportInitialize)(this.startScreenBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.option3Box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.option2Box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.option1Box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainDisplay)).EndInit();
             this.ResumeLayout(false);
 
@@ -195,9 +201,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox mainDisplay;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox option1Box;
+        private System.Windows.Forms.PictureBox option2Box;
+        private System.Windows.Forms.PictureBox option3Box;
         private System.Windows.Forms.PictureBox startScreenBox;
         private System.Windows.Forms.Label option1Label;
         private System.Windows.Forms.Label option2Label;

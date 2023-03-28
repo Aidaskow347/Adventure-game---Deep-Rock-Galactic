@@ -365,6 +365,16 @@ namespace Adventure_game___Deep_Rock_Galactic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap optionPicture {
+            get {
+                object obj = ResourceManager.GetObject("optionPicture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap page_1 {
             get {
                 object obj = ResourceManager.GetObject("page_1", resourceCulture);
