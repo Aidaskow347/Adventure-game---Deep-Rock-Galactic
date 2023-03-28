@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87F235B6-7CC3-44F2-86B9-65A8DD1AE42E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Adventure_game___Deep_Rock_Galactic</RootNamespace>
+    <AssemblyName>Adventure game - Deep Rock Galactic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\HogWarts.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\194071__potentjello__buttons-and-knobs-10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fossil grab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 1 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 1 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 1 %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 2 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 2 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 3 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 4 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 4 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 1 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 3 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 3 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 4 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 4 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 5 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 5 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 6 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 6 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 18 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 18 %28real%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 19 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 21 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 22 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 22 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 22 %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 22 %28bonus%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 23 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 26 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page 26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More Ammo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leechrepellant.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eating mushrooms.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ground cracks.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gearup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alien_Egg_StolenA_1.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Landing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you%27re in hogwarts!.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disposed of.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\havoc.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\havoc.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glyphidRoar.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\195567__jacobalcook__creature-growl-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dreadnoughtDeath.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glyphidDeath.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dreadnoughtCocoon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cough.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fallingOver.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hogWarts.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glisteningGold.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocks.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
